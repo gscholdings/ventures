@@ -1,0 +1,38 @@
+# Netlify config for the GSC Ventures repo.
+# The publish directory is the repo root — every folder under it is mirrored
+# at https://gsc-ventures.netlify.app/<path>.
+
+[build]
+  publish = "."
+
+# Serve markdown as plain text with the right MIME so remote fetchers
+# (and humans hitting the URL directly) get the source, not a download
+# prompt or octet-stream.
+[[headers]]
+  for = "/*.md"
+  [headers.values]
+    Content-Type = "text/markdown; charset=UTF-8"
+
+[[headers]]
+  for = "/**/*.md"
+  [headers.values]
+    Content-Type = "text/markdown; charset=UTF-8"
+
+# Same treatment for CSS so token files render as text.
+[[headers]]
+  for = "/**/*.css"
+  [headers.values]
+    Content-Type = "text/css; charset=UTF-8"
+
+# Folder-root convenience: hitting /design-systems or /design-systems/
+# (no INDEX.md in the path) redirects to the manifest. INDEX.md is the
+# load-bearing entry point — see design-systems/INDEX.md for why.
+[[redirects]]
+  from = "/design-systems"
+  to = "/design-systems/INDEX.md"
+  status = 301
+
+[[redirects]]
+  from = "/design-systems/"
+  to = "/design-systems/INDEX.md"
+  status = 301
