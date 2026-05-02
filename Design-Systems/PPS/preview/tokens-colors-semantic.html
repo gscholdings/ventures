@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background: var(--pps-bone); font-family: var(--font-sans); }
+  .grid { display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .swatch { display:flex; gap:14px; align-items:center; padding:10px; background:#fff; border-radius:8px; border:1px solid rgba(15,46,60,0.06); }
+  .chip { width:64px; height:64px; border-radius:8px; flex-shrink:0; border:1px solid rgba(15,46,60,0.06); }
+  .meta { display:flex; flex-direction:column; gap:2px; min-width:0; }
+  .name { font-size:13px; font-weight:600; color: var(--pps-navy); }
+  .hex { font-size:11px; font-family: var(--font-mono); color: var(--pps-stone); }
+  .role { font-size:10px; color: var(--pps-stone); text-transform:uppercase; letter-spacing:0.12em; }
+  .note { grid-column: 1/-1; font-size:11px; color: var(--pps-stone); margin-top:4px; line-height:1.5; }
+</style></head>
+<body>
+<div class="grid">
+  <div class="swatch"><div class="chip" style="background:#4F7B5A"></div>
+    <div class="meta"><div class="role">Success</div><div class="name">Sage</div><div class="hex">#4F7B5A</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#C98A2C"></div>
+    <div class="meta"><div class="role">Warning</div><div class="name">Amber</div><div class="hex">#C98A2C</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#4A6B82"></div>
+    <div class="meta"><div class="role">Info</div><div class="name">Slate Blue</div><div class="hex">#4A6B82</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#B14A3A"></div>
+    <div class="meta"><div class="role">Critical</div><div class="name">Clay</div><div class="hex">#B14A3A</div></div></div>
+  <div class="note">Critical is a muted clay, never a bright fire-engine red — PPS deliberately avoids "danger" colors that echo conflict.</div>
+</div>
+</body></html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background: var(--pps-bone); font-family: var(--font-sans); }
+  .grid { display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .swatch { display:flex; gap:14px; align-items:center; padding:10px; background:#fff; border-radius:8px; border:1px solid rgba(15,46,60,0.06); }
+  .chip { width:64px; height:64px; border-radius:8px; flex-shrink:0; border:1px solid rgba(15,46,60,0.08); }
+  .meta { display:flex; flex-direction:column; gap:2px; min-width:0; }
+  .name { font-size:13px; font-weight:600; color: var(--pps-navy); }
+  .hex { font-size:11px; font-family: var(--font-mono); color: var(--pps-stone); }
+  .role { font-size:10px; color: var(--pps-stone); text-transform:uppercase; letter-spacing:0.12em; }
+</style></head>
+<body>
+<div class="grid">
+  <div class="swatch"><div class="chip" style="background:#FFFFFF"></div>
+    <div class="meta"><div class="role">Surface</div><div class="name">White</div><div class="hex">#FFFFFF</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#FAF7F3"></div>
+    <div class="meta"><div class="role">Page bg</div><div class="name">Bone</div><div class="hex">#FAF7F3</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#F1EEE9"></div>
+    <div class="meta"><div class="role">Section band</div><div class="name">Mist</div><div class="hex">#F1EEE9</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#E4E0D9"></div>
+    <div class="meta"><div class="role">Hairline / divider</div><div class="name">Fog</div><div class="hex">#E4E0D9</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#B8B4AC"></div>
+    <div class="meta"><div class="role">Disabled text</div><div class="name">Ash</div><div class="hex">#B8B4AC</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#6B6F76"></div>
+    <div class="meta"><div class="role">Body secondary</div><div class="name">Stone</div><div class="hex">#6B6F76</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#2B3340"></div>
+    <div class="meta"><div class="role">Body primary</div><div class="name">Graphite</div><div class="hex">#2B3340</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#0F2E3C"></div>
+    <div class="meta"><div class="role">Headlines</div><div class="name">Navy</div><div class="hex">#0F2E3C</div></div></div>
+</div>
+</body></html>

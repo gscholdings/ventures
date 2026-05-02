@@ -1,0 +1,21 @@
+<!-- shared head fragment for preview cards — included via @import in inline style -->
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    padding: 20px;
+    background: var(--pps-bone);
+    color: var(--pps-navy);
+    font-family: var(--font-sans);
+    box-sizing: border-box;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  .row { display: flex; gap: 12px; align-items: stretch; }
+  .col { display: flex; flex-direction: column; gap: 12px; }
+  .swatch { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0; }
+  .chip { height: 56px; border-radius: 6px; border: 1px solid rgba(15,46,60,0.06); }
+  .chip-name { font-size: 12px; font-weight: 600; color: var(--pps-navy); letter-spacing: 0.02em; }
+  .chip-hex { font-size: 11px; font-family: var(--font-mono); color: var(--pps-stone); }
+  .chip-role { font-size: 10px; color: var(--pps-stone); text-transform: uppercase; letter-spacing: 0.12em; }
+</style>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background: var(--pps-bone); font-family: var(--font-sans); }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:14px 20px; align-items:center; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; padding:14px 28px; border-radius:999px; font-weight:600; font-size:13px; border:none; cursor:pointer; transition: all 150ms ease; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.12em; }
+  .btn-primary { background: var(--pps-orange); color: #fff; }
+  .btn-primary:hover { background: var(--pps-orange-deep); }
+  .btn-navy { background: var(--pps-navy); color: #fff; }
+  .btn-navy:hover { background: var(--pps-navy-deep); }
+  .btn-outline { background: transparent; color: var(--pps-navy); border: 1.5px solid var(--pps-navy); }
+  .btn-ghost { background: transparent; color: var(--pps-orange); }
+  .btn-disabled { background: var(--pps-fog); color: var(--pps-ash); cursor: not-allowed; }
+  .label { font-family: var(--font-mono); font-size:11px; color: var(--pps-stone); text-transform:uppercase; letter-spacing:0.08em; }
+</style></head>
+<body>
+<div class="grid">
+  <div class="label">Primary · Orange CTA</div>
+  <button class="btn btn-primary">We Have a Conflict</button>
+  <div class="label">Primary · Navy CTA</div>
+  <button class="btn btn-navy">We Need Training</button>
+  <div class="label">Outline · Navy</div>
+  <button class="btn btn-outline">Learn More</button>
+  <div class="label">Ghost · text link</div>
+  <button class="btn btn-ghost">View resources →</button>
+  <div class="label">Disabled</div>
+  <button class="btn btn-disabled" disabled>Submit</button>
+</div>
+</body></html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:20px; background: var(--pps-bone); font-family: var(--font-sans); }
+  .grid { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:14px; }
+  .card { display:flex; flex-direction:column; overflow:hidden; border-radius:6px; box-shadow: 0 8px 20px rgba(15,46,60,0.10); }
+  .photo { aspect-ratio: 4/5; background-size:cover; background-position: center; }
+  .body { padding:14px 14px 16px; }
+  .navy { background: var(--pps-navy); color: #fff; }
+  .navy .role { color: var(--pps-orange-soft); }
+  .orange { background: var(--pps-orange); color: #fff; }
+  .orange .role { color: var(--pps-navy); }
+  .role { font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.14em; margin-bottom:6px; }
+  .name { font-family: var(--font-display); font-size:16px; font-weight:700; line-height:1.15; margin-bottom:4px; }
+  .desc { font-size:10px; line-height:1.45; opacity:0.9; }
+</style></head>
+<body>
+<div class="grid">
+  <div class="card">
+    <div class="photo" style="background:linear-gradient(135deg,#3a4a55 0%, #647281 100%)"></div>
+    <div class="body navy"><div class="role">Founder</div><div class="name">Jeremy Pollack, Ph.D.</div><div class="desc">Oversees all peace processes and keynotes.</div></div>
+  </div>
+  <div class="card">
+    <div class="photo" style="background:linear-gradient(135deg,#7d6f5e 0%, #b8a994 100%)"></div>
+    <div class="body orange"><div class="role">Program Director</div><div class="name">Sara Jeckovich, M.A.</div><div class="desc">Leads implementation; first point of contact.</div></div>
+  </div>
+  <div class="card">
+    <div class="photo" style="background:linear-gradient(135deg,#5a6b4a 0%, #8a9c75 100%)"></div>
+    <div class="body navy"><div class="role">Peacebuilder</div><div class="name">Luke Wiesner, M.A.</div><div class="desc">Designs intervention and prevention services.</div></div>
+  </div>
+</div>
+</body></html>

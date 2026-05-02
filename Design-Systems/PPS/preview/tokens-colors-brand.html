@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background: var(--pps-bone); font-family: var(--font-sans); }
+  .grid { display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .swatch { display:flex; gap:14px; align-items:center; padding:10px; background:#fff; border-radius:8px; border:1px solid rgba(15,46,60,0.06); }
+  .chip { width:64px; height:64px; border-radius:8px; flex-shrink:0; border:1px solid rgba(15,46,60,0.06); }
+  .meta { display:flex; flex-direction:column; gap:2px; min-width:0; }
+  .name { font-size:13px; font-weight:600; color: var(--pps-navy); }
+  .hex { font-size:11px; font-family: var(--font-mono); color: var(--pps-stone); }
+  .role { font-size:10px; color: var(--pps-stone); text-transform:uppercase; letter-spacing:0.12em; }
+</style></head>
+<body>
+<div class="grid">
+  <div class="swatch"><div class="chip" style="background:#0F2E3C"></div>
+    <div class="meta"><div class="role">Primary</div><div class="name">Navy</div><div class="hex">#0F2E3C</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#F16334"></div>
+    <div class="meta"><div class="role">Accent</div><div class="name">Orange</div><div class="hex">#F16334</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#0A2230"></div>
+    <div class="meta"><div class="role">Hover / pressed</div><div class="name">Navy Deep</div><div class="hex">#0A2230</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#D9542A"></div>
+    <div class="meta"><div class="role">Hover / pressed</div><div class="name">Orange Deep</div><div class="hex">#D9542A</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#1B3F50"></div>
+    <div class="meta"><div class="role">Surface</div><div class="name">Navy Soft</div><div class="hex">#1B3F50</div></div></div>
+  <div class="swatch"><div class="chip" style="background:#F8916A"></div>
+    <div class="meta"><div class="role">Tint</div><div class="name">Orange Soft</div><div class="hex">#F8916A</div></div></div>
+</div>
+</body></html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background: var(--pps-bone); font-family: var(--font-sans); }
+  .row { display:flex; gap:18px; align-items:center; }
+  .item { display:flex; flex-direction:column; align-items:center; gap:8px; flex:1; }
+  .swatch { width:64px; height:64px; background: var(--pps-navy); border:1px solid rgba(15,46,60,0.1); }
+  .key { font-family: var(--font-mono); font-size:11px; color: var(--pps-navy); font-weight:600; }
+  .px  { font-family: var(--font-mono); font-size:10px; color: var(--pps-stone); }
+  .role{ font-size:10px; color: var(--pps-stone); text-transform:uppercase; letter-spacing:0.1em; }
+</style></head>
+<body>
+<div class="row">
+  <div class="item"><div class="swatch" style="border-radius:0"></div><div class="key">none</div><div class="px">0</div><div class="role">Inputs</div></div>
+  <div class="item"><div class="swatch" style="border-radius:4px"></div><div class="key">sm</div><div class="px">4px</div><div class="role">Tags</div></div>
+  <div class="item"><div class="swatch" style="border-radius:8px"></div><div class="key">md</div><div class="px">8px</div><div class="role">Cards</div></div>
+  <div class="item"><div class="swatch" style="border-radius:14px"></div><div class="key">lg</div><div class="px">14px</div><div class="role">Modals</div></div>
+  <div class="item"><div class="swatch" style="border-radius:999px;width:96px"></div><div class="key">pill</div><div class="px">999</div><div class="role">Buttons</div></div>
+</div>
+<div style="margin-top:18px; font-size:11px; color:var(--pps-stone); font-family:var(--font-mono)">Buttons are full pills — the most distinctive shape choice.</div>
+</body></html>

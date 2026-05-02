@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  body { margin:0; padding:24px; background: var(--pps-bone); font-family: var(--font-sans); }
+  .grid { display:grid; grid-template-columns: repeat(6, 1fr); gap: 10px 12px; }
+  .cell { display:flex; flex-direction:column; align-items:center; gap:6px; padding:10px 4px; border:1px solid var(--pps-fog); border-radius:6px; background:#fff; }
+  .cell svg { width:24px; height:24px; color: var(--pps-navy); stroke-width: 1.75; }
+  .cell .n { font-family: var(--font-mono); font-size: 9px; color: var(--pps-stone); }
+  .note { margin-top: 12px; font-size:11px; color: var(--pps-stone); line-height:1.5; }
+</style></head>
+<body>
+<div class="grid">
+  <div class="cell"><i data-lucide="handshake"></i><div class="n">handshake</div></div>
+  <div class="cell"><i data-lucide="messages-square"></i><div class="n">messages</div></div>
+  <div class="cell"><i data-lucide="users"></i><div class="n">users</div></div>
+  <div class="cell"><i data-lucide="book-open"></i><div class="n">book-open</div></div>
+  <div class="cell"><i data-lucide="presentation"></i><div class="n">presentation</div></div>
+  <div class="cell"><i data-lucide="graduation-cap"></i><div class="n">graduation</div></div>
+  <div class="cell"><i data-lucide="clipboard-check"></i><div class="n">clipboard</div></div>
+  <div class="cell"><i data-lucide="target"></i><div class="n">target</div></div>
+  <div class="cell"><i data-lucide="compass"></i><div class="n">compass</div></div>
+  <div class="cell"><i data-lucide="trending-up"></i><div class="n">trending-up</div></div>
+  <div class="cell"><i data-lucide="heart-handshake"></i><div class="n">heart-hand</div></div>
+  <div class="cell"><i data-lucide="shield-check"></i><div class="n">shield</div></div>
+</div>
+<div class="note">Lucide · stroke 1.75 · navy <code>#0F2E3C</code>. Substitution flagged — confirm with brand if a custom icon set exists.</div>
+<script>lucide.createIcons();</script>
+</body></html>
